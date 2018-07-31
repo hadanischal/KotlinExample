@@ -70,7 +70,7 @@ class Similarities {
         println("length: ${ result?.length }")
         println("length: ${ result!!.length }")
 
-        return result!
+        return result!!
     }
 
     /*
@@ -116,6 +116,19 @@ class Similarities {
     // -----------------------------------------------------------
     //region Arrays
 
+    fun showArrays() {
+        val names = arrayOf("Anna", "Alex", "Brian", "Jack")
+
+        for ((i, name) in names.withIndex()) {
+            print("Person ${ i + 1 } is called $name ")
+        }
+
+        // Person 1 is called Anna
+        // Person 2 is called Alex
+        // Person 3 is called Brian
+        // Person 4 is called Jack
+    }
+
     /*
     func showArrays() {
         let names = ["Anna", "Alex", "Brian", "Jack"]
@@ -135,6 +148,13 @@ class Similarities {
     // -----------------------------------------------------------
     //region Lists
 
+    fun showList() {
+        val names =  listOf("Anna", "Alex", "Brian", "Jack")
+        for ((index,name)in names.withIndex()){
+            println("Person ${ index + 1 } is called $name )")
+        }
+
+    }
     //endregion
     // -----------------------------------------------------------
     //region Dictionaries
