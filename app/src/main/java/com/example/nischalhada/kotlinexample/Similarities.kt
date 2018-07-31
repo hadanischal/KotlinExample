@@ -175,9 +175,15 @@ class Similarities {
     //region Mutable Types
 
     fun showLists2() {
+        val namesArray = arrayOf("Anna", "Alex", "Brian", "Jack")
+        //namesArray.add
 
         val names = listOf("Anna", "Alex", "Brian", "Jack")
         println("names.count(): ${ names.count() }")
+
+        val names2 = mutableListOf("Anna", "Alex", "Brian", "Jack")
+        names2.add("harry")
+        println("names.count(): ${ names2.count() }")
 
         //-----------------------------------------------------------------
 
@@ -187,6 +193,10 @@ class Similarities {
                 "Jack" to 55)
         println("nameToAge.size: ${ nameToAge.size }")
 
+        val mutableMap = nameToAge.toMutableMap()
+        mutableMap["Jack"] = 29
+        mutableMap["James"] = 42
+
 
 // -----------------------------------------------------------------
 
@@ -194,6 +204,10 @@ class Similarities {
                 "Alex" to 27,
                 "Brian" to 64,
                 "Jack" to 55)
+
+        nameToAge2["Jack"] = 29
+        nameToAge2["James"] = 42
+        println("nameToAge.size: ${ nameToAge2.size }")
 
     }
 
