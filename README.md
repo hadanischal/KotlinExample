@@ -8,7 +8,7 @@
 * Among its many benefits, Kotlin is 100% compatible with Java and is fully supported by Google. 
 
 ## Objective:
-* Comprehensive overview of the most essential features of Kotlin, specifically the version that runs on the Java Virtual Machine (JVM). 
+* Comprehensive overview of the most essential features of Kotlin.
 * Project setup, through rudimentary syntax, to working with variables and creating custom classes. 
 * Display program flow with functions, loops, conditional statements, and try/catch exception handling. 
 * Display how to manage data in memory with fixed-size arrays and dynamic data collections: lists, sets, and maps. 
