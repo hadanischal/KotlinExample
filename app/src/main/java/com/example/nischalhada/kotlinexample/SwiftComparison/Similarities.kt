@@ -1,4 +1,4 @@
-package com.example.nischalhada.kotlinexample
+package com.example.nischalhada.kotlinexample.SwiftComparison
 
 class Similarities {
     // -----------------------------------------------------------
