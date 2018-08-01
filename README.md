@@ -65,8 +65,10 @@ And we don't have a guard statement unfortunately, but we can do something simil
 
 So we'll just say do something, and then we'll print out whatever it is, and it is just like the dollar zero is in any Swift-type block. So those are the two types of construct that you can work with to have something similar to a guard statement.
 
-
-
-
-
-
+## Lambdas:
+* One of the great language features of Swift is closures, and Kotlin has a similar concept called lambdas. 
+* A closure in most languages just means a lambda that captures some of the values that are outside of the code block. 
+* But in this, we'll just call these lambdas. 
+* In a lambda, you don't specifically state what its return type will be. 
+* we don't have the ternary operator. So instead, you can do an inline if-else block. 
+ 
