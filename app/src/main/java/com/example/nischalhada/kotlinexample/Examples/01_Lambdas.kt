@@ -13,5 +13,10 @@ object Lambdas {
         })
     }
 
+    fun localDBCall(authenticationBlock: (String)->Boolean) {
+        //do some local work
+        val userName = "Naruto Uzumaki"
+        val isAuthorized = authenticationBlock(userName)
+     }
 
 }
