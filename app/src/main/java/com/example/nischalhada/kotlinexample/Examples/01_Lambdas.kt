@@ -17,6 +17,10 @@ object Lambdas {
         //do some local work
         val userName = "Naruto Uzumaki"
         val isAuthorized = authenticationBlock(userName)
-     }
+        useLocalResult(userName, isAuthorized)
+    }
 
+    private fun useLocalResult(userName: String, isAuthorized: Boolean) {
+        println("$userName is authorized: $isAuthorized")
+    }
 }
