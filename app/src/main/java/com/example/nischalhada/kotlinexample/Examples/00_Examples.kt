@@ -29,7 +29,11 @@ private fun runLambdaExamples(){
 }
 
 private fun runExceptionExamples() {
+    Exceptions.example1()
+    val result = Exceptions.example2("bad value")
+    println("result: $result")
 
+//    Exceptions.example3()
 }
 
 private fun runInterfaceExamples() {
