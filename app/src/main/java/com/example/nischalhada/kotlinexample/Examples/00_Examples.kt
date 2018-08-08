@@ -16,11 +16,24 @@ object Examples {
 //region Examples
 
 private fun runLambdaExamples(){
+    println("~~NetworkCall~~")
+    Lambdas.asyncNetworkCall { successful ->
+        val message = if(successful) "success" else "failure"
 
+        println("message: $message")
+    }
+    println("~~LocalDBCall~~")
+    Lambdas.localDBCall { authenticate(it) }
+
+    println("~~runLambdaExamples finished~~")
 }
 
 private fun runExceptionExamples() {
+    Exceptions.example1()
+    val result = Exceptions.example2("bad value")
+    println("result: $result")
 
+//    Exceptions.example3()
 }
 
 private fun runInterfaceExamples() {
